@@ -3,7 +3,7 @@ package com.company;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class B_D_Main {
+public class Main {
 
     public static void main(String[] args) {
 
