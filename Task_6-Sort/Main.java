@@ -2,6 +2,11 @@ package com.company;
 
 class main {
     public static void main(String[] args) {
+        
+        
+        //Написать функцию выполняющую сортировку массива строк. На вход функции передается
+        //произвольный массив строк, и флаг направления сортировки.
+        
 
         String[] list_to_sort = {"ccc", "bbb", "ewer", "aaa", "ddd"};
         boolean ascending = true;
