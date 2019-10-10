@@ -30,11 +30,11 @@ select Cardnumber, sum (Summa) Summa   from Clients
 -- 3
 -- Удалить ошибочную транзакцию по карте "1234567890123451" от "19.06.2012  15:13:13"
 
-Delete (select * from Transactions
-inner join  cards on Transactions.CardId = cards.CardId
-where CardNumber in 1234567890123451 and
-    DATE_OF_TRANSACTION in '19.06.2012 15:13');
-
+Delete from TRANSACTIONS
+where CARDID =
+(select CARDID from CARDS
+ where CARDNUMBER = 1234567890123451) and DATE_OF_TRANSACTION in '19.06.2012  15:13:13';
+ 
 -- 3 end
 
 -- 4
